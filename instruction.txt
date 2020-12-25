@@ -1,0 +1,33 @@
+add to /admin/language/ru-ru/common/column_left.php
+$_['text_formaction']                = 'Заполненные формы на сайте';
+$_['text_formaction_title']              = 'Заполненные формы';
+
+###########
+
+add to /admin/language/en-gb/common/column_left.php
+$_['text_formaction']                = 'Completed Forms on Site';
+$_['text_formaction_title']              = 'Completed Forms';
+
+###################
+add to /catalog/controller/common/footer.php
+
+$data['button_submit'] = $this->language->get('button_submit');
+$data['input_name'] = $this->language->get('input_name');
+$data['input_email'] = $this->language->get('input_email');
+$data['input_phone'] = $this->language->get('input_phone');
+$data['input_message'] = $this->language->get('input_message');
+$data['text_policy'] = $this->language->get('text_policy');
+
+if(isset($this->session->session_id)){
+			$data['session_id']=$this->session->session_id;	
+		}
+
+
+########
+
+add to /catalog/view/theme/default/template/common/footer.tpl
+
+<?php if (file_exists(DIR_APPLICATION . '/view/theme/default/template/common/form.tpl'))
+	include (DIR_APPLICATION . '/view/theme/default/template/common/form.tpl');
+	else echo 'Not found';
+?>
