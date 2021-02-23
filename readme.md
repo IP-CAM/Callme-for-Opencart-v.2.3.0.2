@@ -1,4 +1,3 @@
-opencart  2.3.0.2
-Формы отправки формы + сохранение в базе, валидация 
-Form submission forms + database save, validation
-
+Opencart  v.2.3.0.2
+Forms Sending Form + Conservation in Base, Validation
+Form Submission Forms + Database Save, Validation
